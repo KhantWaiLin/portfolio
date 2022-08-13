@@ -1,0 +1,137 @@
+.intro{
+    display: flex;
+    margin-top: 6rem;
+    height: 77vh;
+}
+
+.i-left{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 1;
+    gap: 2rem;
+}
+
+.i-left-img{
+    transform: scale(0.5);
+    position: absolute;
+    top: -30%;
+    left: -15%;
+    border-radius: 50%;
+}
+
+.i-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.i-name>:nth-child(2){
+     font-size: 3rem;
+     font-weight: bold;
+     color: var(--black);
+}
+
+.i-name>:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+.i-name>:nth-child(4){
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+.i-button{
+    width: 6rem;
+    height: 2rem;
+}
+
+.i-icons{
+    margin-top: 3rem;
+    display: flex;
+    gap: 0rem;
+}
+
+.i-icons>*{
+    transform: scale(0.5);
+}
+
+.i-icons>:hover{
+    cursor: pointer;
+}
+
+
+.i-right{
+    flex: 1;
+    position: relative;
+}
+
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+   
+}
+
+.i-img{
+    width: 23rem;
+    height: 28rem;
+    background-color:transparent;
+    top: -3.5rem;
+    left: 5rem;
+    
+}
+
+.blur{
+    width: 22rem;
+    height: 14rem;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #edd0ff;
+    filter: blur(72px);
+    z-index: -9;
+    
+}
+
+@media screen and (max-width: 480px) {
+    .intro {
+        flex-direction: column;
+        gap: 0rem;
+        height: 64rem;
+      }
+      .i-name>:nth-child(2){
+        font-size: 2rem;
+      }
+      .i-name>:nth-child(3){
+        font-size: 2rem;
+      }
+    
+      .i-right {
+        transform: scale(0.8);
+        left: -3rem;
+        top: -8rem;
+      }
+      .i-right .blur {
+        display: none;
+      }
+      .floating-div:nth-of-type(1){
+        /* display: none; */
+        top: -7rem !important;
+        left: 30rem;
+      }
+      .i-left-img{
+        margin-top: 1.5rem;
+        margin-left: -2rem;
+      }
+      .i-icons{
+        margin-top: -0.3rem;
+      }
+      .i-img{
+        transform: scale(0.8);
+        top:-6rem;
+        left: 4rem;
+      }
+
+}

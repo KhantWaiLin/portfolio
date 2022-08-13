@@ -1,0 +1,88 @@
+.services{
+    padding: 0 3rem ;
+    display: flex;
+    gap: 1rem;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+}
+
+.awesome{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.awesome>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.awesome>:nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.awesome>:nth-child(3){
+    color: var(--gray);
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+.s-button{
+    margin-top: 1rem;
+    height: 2rem;
+    width: 8rem;
+}
+
+.cards{
+    flex: 1;
+    position: relative;
+}
+.cards>*{
+    position: absolute;
+}
+
+.s-blur-2{
+    left: 0rem;
+    top: 8rem
+}
+
+.s-blur-1{
+    top: 13rem;
+    left:-18rem;
+}
+
+@media screen and (max-width: 480px) {
+    .services {
+      margin-top: -15rem;
+      flex-direction: column;
+      
+      gap: 5rem;
+      height: 66rem;
+      padding: 0;
+    }
+
+    .awesome>:nth-child(1){
+        font-size: 2rem;
+    }
+    .awesome>:nth-child(2){
+        font-size: 2rem;
+    }
+  
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 17rem;
+      width: 30%;
+    }
+    .cards > * {
+      position: static;
+     
+    }
+  }
