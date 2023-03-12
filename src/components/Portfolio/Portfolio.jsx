@@ -1,13 +1,13 @@
 import React from 'react';
 import "./Portfolio.css";
 import {Swiper,SwiperSlide} from 'swiper/react';
-// import Sidebar from '../../img/sidebar.png';
+
 import TikTik from '../../img/tik-tik.png'
 import Gym from '../../img/gym-fitness.png';
-import Amazone from '../../img/myAmazon.png'
-// import Hoc from '../../img/hoc.png';
-// import Ecommerce from '../../img/ecommerce.png';
-// import MusicApp from '../../img/musicapp.png';
+import Amazone from '../../img/myAmazon.png';
+import Lyriks from '../../img/Lyriks.png';
+import Youtube from '../../img/YouTube.PNG'
+
 import 'swiper/css';
 import Calculator from '../../img/simple-calculator.png';
 import { themContext } from '../../Context';
@@ -30,7 +30,7 @@ const Portfolio = () => {
         {/* slider */}
         <Swiper
         spaceBetween={30}
-        slidesPerView={ 3}
+        slidesPerView={3}
         grabCursor={true}
         className='portfolio-slider'
         >
@@ -42,12 +42,17 @@ const Portfolio = () => {
             </SwiperSlide>
 
             <SwiperSlide>
+                <img src={Lyriks} alt="" />
+            </SwiperSlide>
+
+            <SwiperSlide>
                 <img src={Amazone} alt="" />
             </SwiperSlide>
 
             <SwiperSlide>
-                <img src={Calculator} alt="" />
+                <img src={Youtube} alt="" />
             </SwiperSlide>
+
         </Swiper>
     </div>
   )

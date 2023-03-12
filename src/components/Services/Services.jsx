@@ -7,7 +7,7 @@ import Card from '../Card/Card';
 import { themContext } from '../../Context';
 import { useContext } from 'react';
 import {motion} from 'framer-motion';
-import resume from '../../../src/resume.docx';
+import resume from '../../../src/resume.pdf';
 
 
 const Services = () => {
